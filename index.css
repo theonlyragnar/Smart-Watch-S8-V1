@@ -1,0 +1,149 @@
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, green,darkgreen 60%);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgba(1, 255, 81, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+
+
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+.container{
+    border: solid transparent;
+    height: 700px;
+    width: auto;
+    border-radius: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    margin: 40px;
+    background-color:  rgb(11, 236, 86) ;
+    box-shadow: 10px 10px 30px rgb(7, 217, 28);
+
+}
+.watch{
+    height: 600px;
+    width: 600px;
+    position: relative;
+    right: 45%;
+    left: 55%;
+    top: -140px;
+
+    
+
+}
+.buynow{
+    background-color: transparent;
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 30px rgb(3, 91, 22);
+    border-color: rgb(255, 255, 255);
+        position: relative;
+        margin-right: 950px;
+        margin-left: 100px;
+        top: -250px;
+        
+}
+.buynowcontent{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.buynow2{
+    background-color: transparent;
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 30px rgb(3, 91, 22);
+    border-color: rgb(255, 255, 255);
+        position: relative;
+        margin-right: 300px;
+        margin-left: 500px;
+        margin-bottom: 100px;
+        top: -300px;
+        
+}
+.buynowcontent2{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.maintitle{
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    text-shadow: 10px 10px 30px rgb(212, 215, 212);
+    font-size: xxx-large;
+    margin-left: 235px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    
+}
